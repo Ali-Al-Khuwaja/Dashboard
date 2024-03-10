@@ -6,11 +6,15 @@
     <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
     <link rel="stylesheet" href="styles.css">
     <title>DashBoard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
+        <!-- This part is for side bar 🖣 -->
         <div class="container">
-            <div class="sideBar">
+            <section class="sideBar">
                 <nav>
                     <div class="logo">
                         <img src="assets/view-dashboard.svg" alt="dashBoard">
@@ -38,7 +42,7 @@
                         <li>
                             <a href="#">
                                 <img src="assets/clock-rotate-left-solid.svg" alt="History">
-                                <p></p>
+                                <p>History</p>
                             </a>
                         </li>
                         <li>
@@ -75,19 +79,59 @@
                         </li>
                     </ul>
                 </nav>
-            </div>
-            <div class="header">
+            </section>
+            <!-- This part is for the top of the page on the right side 🖣 -->
+            <section class="header"> 
                 <div class="upperPart">
-                    <div class="uppperLeft"></div>
-                    <div class="upperRigth"></div>
+                    <div class="upperLeft">
+                        <a href="#"><img src="assets/magnifying-glass-solid.svg" alt="search"></a>
+                        <input type="search">
+                    </div>
+                    <div class="upperRight">
+                        <a href="#"><img src="assets/bell-solid.svg" alt="notifications"></a>
+                        <a href="#"><img src="assets/profile.png" alt="profile picture" class="profileImg"></a>
+                        <p>User name</p>
+                    </div>
                 </div>
                 <div class="downPart">
-                    <div class="dowmLeft"></div>
-                    <div class="downRight"></div>
+                    <div class="downLeft">
+                        <img src="assets/profile.png" alt="profile" class="profileImg">
+                        <div class="welcomeUser">
+                            <p class="smallText">Hi there</p>
+                            <p>User name (@username)</p>
+                        </div>
+                    </div>
+                    <div class="downRight">
+                        <button class="orangeButton">
+                            new
+                        </button>
+                        <button class="orangeButton">
+                            upload
+                        </button>
+                        <button class="orangeButton">
+                            share
+                        </button>
+                    </div>
                 </div>
-            </div>
+            </section>
             <div class="content">
-                
+                <div class="cardContainer">
+                    <p>Your projects</p>
+                    <div class="projectsCards">
+                        <div class="cardContent">
+                            <h1>super cool project</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A veritatis commodi aspernatur iusto voluptatum esse inventore consectetur eveniet ratione asperiores dolore quis placeat cumque dignissimos quam excepturi omnis, tempore corrupti.</p>
+                        </div>
+                        <div class="cardActions">
+                            <a href="#"><img src="assets/star-regular.svg" alt="star this proejct"></a>
+                            <a href="#"><img src="assets/eye-solid.svg" alt="view project"></a>
+                            <a href="#"><img src="assets/share-solid.svg" alt="share this project"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="asideContaienr">
+
+                </div>
             </div>
         </div>
     </main>
