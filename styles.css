@@ -72,7 +72,7 @@ nav > div > img{
     display: flex;
     justify-content: space-between;
     justify-items: center;
-    padding: 1rem;
+    padding: 0 1rem 0 1rem;    
 }
 .upperLeft, .downLeft, .downRight{
     display: flex;
@@ -154,12 +154,12 @@ input{
 /* aside */
 .announcementsContainer{
     grid-column: 9/11;
-    grid-row: 4/5;
+    grid-row: auto;
     margin-right: 1rem
 }
 .trendingContainer{
     grid-column: 9/11;
-    grid-row: 5/6;
+    grid-row: 13/20;
     margin-right: 1rem;
 }
 .announcementsCard , .trendingCard{
